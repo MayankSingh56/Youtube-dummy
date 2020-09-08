@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
-    state= {
+    state = {
         term: ''
     }
 
     onInputChange = event => {
-        this.setState({term: event.target.value})
+        this.setState({ term: event.target.value })
     };
 
     onSubmitChange = event => {
@@ -21,10 +21,10 @@ class SearchBar extends Component {
                     <div className='field'>
                         <label>Video search</label>
                         <input
-                         type='text'
-                         value={this.state.term}
-                         onChange={this.onInputChange}
-                          />
+                            type='text'
+                            value={this.state.term}
+                            onChange={this.onInputChange}
+                        />
                     </div>
                 </form>
             </div>
